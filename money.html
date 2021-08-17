@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our banking System</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="text-5xl text-center mb-10 mt-10">Welcome to Our Bank</h2>
+    <section class="w-3/4 mx-auto grid gap-4 grid-cols-3">
+        <div class=" bg-green-300 text-2xl px-14 py-4 font-semibold">
+            <h2>Deposit
+            </h2>
+            <h3>$ <span id="deposit-value">00</span></h3>   
+        </div>
+        <div class="bg-green-300 text-2xl px-14 py-4 font-semibold">
+            <h2>Withdraw
+            </h2>
+            <h3>$ <span id="withdraw-value">00</span></h3>   
+        </div>
+        <div class="bg-green-300 text-2xl px-14 py-4 font-semibold">
+            <h2>Total Money
+            </h2>
+            <h3>$ <span id="total-value">1200</span></h3>   
+        </div>
+        
+    </section>
+    <section class="w-3/4 mx-auto grid gap-4 grid-cols-2 mt-10">
+        <div  class="bg-green-300 px-10 py-4 font-semibold">
+            <h2 class="text-2xl mb-4">Deposit</h2>
+            <input id="deposit-text" class="w-3/4 border-2 border-black px-2 py-1 text-1xl mb-4"type="text" placeholder="deposit here">
+            <br>
+            <button id="deposit-btn"class=" bg-yellow-300 border-2 border-black px-4 py-2">Deposit</button>
+        </div>
+        <div  class="bg-green-300 px-10 py-4 font-semibold">
+            <h2 class="text-2xl mb-4">Withdraw</h2>
+            <input id="withdraw-text"class="w-3/4 border-2 border-black px-2 py-1 text-1xl mb-4"type="text" placeholder="Withdraw here">
+            <br>
+            <button id="withdraw-btn"class="bg-yellow-300 border-2 border-black px-4 py-2">Withdraw</button>
+        </div>
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+</html>
